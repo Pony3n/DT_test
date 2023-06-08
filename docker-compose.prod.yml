@@ -1,0 +1,8 @@
+services:
+  dd_test:
+    restart: always
+    image: pony3n/django_docker_test_image
+#    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - 8000:8000
+    working_dir: /Docker_prod_test
